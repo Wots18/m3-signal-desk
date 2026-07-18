@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', ui-serif, Georgia, serif;
+}
+
+html, body, #root {
+  min-height: 100%;
+  background: #0c0a0b;
+}
+
+body {
+  margin: 0;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
+
+.ticker-track {
+  animation: ticker-scroll 18s linear infinite;
+}
